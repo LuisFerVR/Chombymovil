@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>CONSULTAR COMBIS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="./js/viajes.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Css/ConsultarCombi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  </head>
+  <body class="body">
+    <div class="login-page">
+      <div class="form">
+        <center><h1 class="Tprincipal">CONSULTAR COMBIS</h1></center>
+        <img class="Mcombi" src="./Img/combiupp.jpeg" />
+        <br>
+        <a  href="#" onclick="app.mostrarVuelos();">Consultar combis</a>
+
+        <section class="section-padding">
+            <div class="container">
+              <div class="titulo">
+                <h2 >Consultar reservacion</h2>
+              </div>
+              <div class="row">
+      
+                <div id="menu1" class="col-6">
+                  <div class="about-item">
+                    <div class="about-text">
+                    </div>
+                  </div>
+                </div>
+      
+                <div id="menu2" class="col-5 ">
+                  <div class="about-item">
+                    <div class="about-text">
+                      <input id="docConsulta" class="mb-20 form-control" name="cedula" placeholder="Ingresa tu número de registro">
+                      <a class="btn btn-common btn-rm" href="#" onclick="app.consultarReserva();">Consultar</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div id="campodoc" style="display: none;">
+                  <form action="javascript:void(0);" method="POST" id="reserva-edit">
+                    <p id="datosvuelo"></p>
+                    <input type="text" id="documento" placeholder="numero de registro">
+                    <input type="submit" value="Reservar" />
+                  </form>
+                  <div id="asientos">
+                    <h1>Asientos</h1>
+                      <div id="camion">
+                        <div class="Aatras" style="display: block;"></div>
+                        <div id="A4"></div>
+                        <div id="A5"></div>
+                        <div id="A6"></div>
+                        <div id="A7"></div>
+                        <div id="A8"></div>
+                        <div class="Adelante" style="display: block;"></div>
+                        <div id="A1"></div>
+                        <div id="A2"></div>
+                        <div id="A3"></div>
+                        <div class="Apuerta" style="display:inline;"></div>
+                        <div class="Acpuerta" style="display:inline;"></div>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+      
+                    <table>
+                      
+                      <tbody id="vuelos"></tbody>
+                    </table>
+      
+                  </div>
+                </div>
+              </div>
+              <br>
+              <a id="btnback" style="display: none;" href="#" class="btn btn-common btn-rm" onclick="app.Volver();">Volver</a>
+            </div>
+          </section>
+      
+          <div id="copyright">
+            <div class="container">
+              <div class="abajo">
+                <div class="col-md-12">
+                    <br>
+                    <br>
+                    <a href="./menuprincipal.html">menu</a>
+                    <br>
+                    <br>
+                  <p>© Desarrollado por <a href="https://sii.upp.edu.mx/vista/comunes/vMenu.php" rel="nofollow">LID</a></p>                   
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </body>
+</html> 
